@@ -1,0 +1,217 @@
+body, h1, h2, p, a, iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #EEB118;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background: url('./assets/Captura\ de\ tela\ 2023-11-07\ 141627.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background-color: #3B3130;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header a {
+    display: flex;
+    justify-content: center ;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+}
+
+.title-img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-padaria {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos da seção principal */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FCEEE1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.header-images {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha em telas menores */
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.h-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.line {
+    border-top: 2px solid #ccc;
+    margin: 20px 0;
+}
+
+.inicial-paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #000000;
+}
+
+.localizacao {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.localize {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos das seções "center" e "end" */
+.center, .end {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.center{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-bottom: 10vh;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.end-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 4vh;
+    gap: 30vw;
+    margin: 20px 0;
+    margin-bottom: 10vh;
+}
+
+.insta, .face {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    margin-bottom: 2vh;
+}
+
+.insta:hover, .face:hover {
+    background-color: #555;
+}
+
+/* Estilos da seção "about" */
+.about {
+    
+    text-align: center;
+    margin: 20px 0; /* Defina uma margem superior */
+    padding-top: 20px; /* Adicione um preenchimento superior para espaço em branco */    
+}
+
+.Sobre {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.text {
+    
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* Estilos das seções "links" e "contact" */
+.links, .pCont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4vw;
+    text-align: center;
+    margin-bottom: 6vh;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    font-size: 3vh;
+    font-weight: bold;
+    color: #EEB118;
+}
+
+.links-style {
+    color: #EEB118;
+}
+
+.links-style:hover {
+    color: #3B3130;
+}
+
+.p1, .p2, .p3{
+    width: 20vw;
+}
+
+
+/* Regras responsivas */
+@media (max-width: 768px) {
+
+    .header-images {
+        justify-content: center; /* Centralize as imagens em telas menores */
+    }
+
+    .center, .end {
+        flex-direction: column; /* Coloque os elementos em coluna em telas menores */
+    }
+
+    .p1, .p2, .p3 {
+        width: auto; /* Redefina a largura para adaptar ao conteúdo em telas menores */
+    }
+}
